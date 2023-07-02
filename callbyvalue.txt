@@ -1,0 +1,35 @@
+int a = 4
+int b = 5
+
+swap(a,b)
+
+//call by value
+int swap(int a ,int b) //copy the variable from a,b
+{
+    int temp=a;
+    a=b;
+    b=temp;
+}
+
+
+call by reference using pointers
+swap(&a ,&b);
+int swap(int* a ,int* b)
+{
+    int temp = *a;
+    *a = *b;
+    *b =temp;
+}
+
+swap(a,b);
+int swap(int &a,int&b)
+{
+    int temp = a;
+    a=b;
+    b=temp;
+}
+
+
+
+default amd const 
+use const variable
